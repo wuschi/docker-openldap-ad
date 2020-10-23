@@ -71,7 +71,7 @@ objectclass ( 666.666.666.666.666.666.1
                 otherWellKnownObjects $ mS-DS-ConsistencyGuid $
                 mS-DS-ConsistencyChildCount $ nTSecurityDescriptor $ masteredBy ) )
 
-# Wuschi: add mail, sAMAccountName
+# Wuschi: add mail, sAMAccountName, memberOf
 #                mS-DS-CreatorSID 
 
 objectclass ( 1.2.840.113556.1.5.9
@@ -98,7 +98,7 @@ objectclass ( 1.2.840.113556.1.5.9
                 msRADIUSFramedIPAddress $ msRADIUSFramedRoute $
                 msRADIUSServiceType $ msRASSavedCallbackNumber $
                 msRASSavedFramedIPAddress $ msRASSavedFramedRoute $
-                mS-DS-CreatorSID $ mail $ sAMAccountName
+                mS-DS-CreatorSID $ mail $ sAMAccountName $ memberOf
              ) )
 
 #---
